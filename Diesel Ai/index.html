@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DIESEL — Be Chaotic</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- THREE -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+</head>
+
+<body>
+  <!-- 3D BACKGROUND -->
+  <canvas id="diesel-canvas"></canvas>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="glitch">DIESEL</h1>
+    <p class="tagline">FOR SUCCESSFUL LIVING</p>
+  </section>
+
+  <!-- FIT SCAN -->
+  <section class="fit-section">
+    <h2>FIT SCAN</h2>
+
+    <div class="fit-box">
+      <video id="camera" autoplay muted playsinline></video>
+      <img id="fit-preview" />
+      <canvas id="capture-canvas"></canvas>
+      <button id="camera-btn">SCAN FIT</button>
+    </div>
+
+    <p id="fit-status">Allow camera access to scan your fit.</p>
+  </section>
+
+  <!-- CHAT -->
+  <section class="chat-section">
+    <div class="chat-box">
+      <div class="chat-header">
+        <span>DIESEL AI</span>
+        <span class="status">LIVE</span>
+      </div>
+
+      <div id="chat-log"></div>
+
+      <div class="chat-input">
+        <input id="user-input" placeholder="Ask anything..." />
+        <button onclick="sendMessage()">SEND</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="three.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
